@@ -43,13 +43,15 @@ export default function Header (){
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    minHeight: '25%',
+    minHeight: '30%',
     justifyContent: 'space-between',
     padding: 24,
     flexDirection: 'column',
     borderBottomLeftRadius: '20%',
     borderBottomRightRadius: '20%', 
-    overflow: 'hidden'
+    overflow: 'hidden',
+    paddingTop: 54,
+
   },
   icon: {
     flexDirection: 'row',

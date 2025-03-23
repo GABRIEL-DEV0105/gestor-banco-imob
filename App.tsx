@@ -1,9 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Home from './src/pages/Home';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import ButtonTransaction from './src/components/ButtonTransaction';
+import NewTransaction from './src/pages/NewTransaction';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -12,7 +11,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home}/>
-        <Stack.Screen name="NewTransaction" component={ButtonTransaction} options={{ title: 'Nova Transação' }} />
+        <Stack.Screen name="NewTransaction" component={NewTransaction}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
