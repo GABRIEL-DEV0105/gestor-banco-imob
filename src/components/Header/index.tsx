@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { FontAwesome, MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import { LinearGradient } from "expo-linear-gradient";
 
 export default function Header (){
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     borderBottomLeftRadius: '20%',
     borderBottomRightRadius: '20%', 
+    overflow: 'hidden'
   },
   icon: {
     flexDirection: 'row',
@@ -52,10 +53,5 @@ const styles = StyleSheet.create({
     fontSize: 38,
     fontFamily: 'MyCustomFont-Regular',
     color: '#fff',
-  },
-  ddd: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

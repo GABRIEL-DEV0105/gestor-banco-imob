@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native"
 import Header from "../components/Header";
 import * as Font from 'expo-font';
+import Transactions from "../components/Transactions";
 
 export default function Home () {
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -23,7 +24,6 @@ export default function Home () {
     return (
       <View style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="#000" />
-        
       </View>
     );
   }
@@ -31,6 +31,7 @@ export default function Home () {
     return (
         <View style={styles.container}>
             <Header/>
+            <Transactions/>
         </View>
     )
 }
