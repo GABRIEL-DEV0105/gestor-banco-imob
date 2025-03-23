@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
-import { FontAwesome, MaterialIcons } from '@expo/vector-icons';
 import CardTransaction from "../CardTransaction";
 
 export default function Transactions (){
@@ -20,6 +19,7 @@ export default function Transactions (){
 const styles = StyleSheet.create({
   container: {
     width: '100%',
+    height: '100%',
     padding: 24,
     flexDirection: 'column',
   },

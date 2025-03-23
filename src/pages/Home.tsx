@@ -3,6 +3,7 @@ import { ActivityIndicator, StyleSheet, Text, View } from "react-native"
 import Header from "../components/Header";
 import * as Font from 'expo-font';
 import Transactions from "../components/Transactions";
+import ButtonTransaction from "../components/ButtonTransaction";
 
 export default function Home () {
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -32,6 +33,7 @@ export default function Home () {
         <View style={styles.container}>
             <Header/>
             <Transactions/>
+            <ButtonTransaction/>
         </View>
     )
 }

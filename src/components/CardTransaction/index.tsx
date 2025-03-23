@@ -8,7 +8,7 @@ export default function CardTransaction (){
           <View style={{flexDirection: 'row'}}>
               <FontAwesome name="home" size={32} color="black" />
             <View style={{flexDirection: 'column', marginLeft: 8}}>
-              <Text style={styles.title}>Shopping</Text>
+              <Text style={styles.title}>Aluguel</Text>
               <Text style={styles.subTitle}>24 November 2021, 8:20 PM</Text>
             </View>
           </View>
